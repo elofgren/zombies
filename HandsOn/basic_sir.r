@@ -1,5 +1,5 @@
 #Specify the length of time the model will be run for
-t = 100
+t <- 100
 
 #Create array to take model output, and name the columns appropriately
 output <- array(dim=c(t+1,5))
