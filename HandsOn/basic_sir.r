@@ -26,8 +26,8 @@ for (i in 2:(t+1)){
 }
 
 #Plot I against Time, then add lines for other categories and a legend
-plot(I~Time, data=output, type="l", col="Red", ylim=c(0,1000), xlab="Days", ylab="People")
+plot(I~Time, data=output, type="l", col="Red", ylim=c(0,1100), xlab="Days", ylab="People")
 lines(S~Time, data=output, type="l", col="Darkgreen")
 lines(R~Time, data=output, type="l", col="Blue")
 lines(N~Time, data=output, type="l", col="Black", lty=2)
-legend("topright", c("S","I","R"), lwd=2, col=c("darkgreen","red","blue"), lty=c(1,1,1), bty='y')
+legend("topright", c("S","I","R"), lwd=2, col=c("darkgreen","red","blue"), lty=c(1,1,1), bty='y',ncol=3)
